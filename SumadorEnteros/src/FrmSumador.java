@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -91,8 +94,10 @@ public class FrmSumador extends javax.swing.JFrame {
 
     private void btSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSumarActionPerformed
         // TODO add your handling code here:
+        int totalSuma = 0;
         
-        
+        totalSuma = Integer.parseInt(txtValor1.getText()) + Integer.parseInt(txtValor2.getText());
+        JOptionPane.showMessageDialog(null, "La cuma calcula es:" +  totalSuma);
     }//GEN-LAST:event_btSumarActionPerformed
 
     /**
